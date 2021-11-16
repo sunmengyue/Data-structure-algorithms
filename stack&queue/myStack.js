@@ -14,7 +14,7 @@ class Stack {
   push(val) {
     const newNode = new Node(val);
     if (!this.first) {
-      this.first = newNode;
+      this.first = newNode; // the place where shows "first in last out"
     } else {
       newNode.next = this.first;
       this.first = newNode;
